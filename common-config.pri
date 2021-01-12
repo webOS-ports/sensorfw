@@ -41,7 +41,7 @@ equals(QT_MAJOR_VERSION, 6):{
 OTHER_FILES += \
     ../../common.pri
 
-contains(CONFIG,hybris) {
+contains(CONFIG,hybris)|contains(CONFIG,autohybris) {
     CONFIG += link_pkgconfig
     contains(CONFIG,binder) {
         DEFINES += USE_BINDER=1

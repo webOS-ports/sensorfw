@@ -19,10 +19,6 @@ SOURCES += hybrisadaptor.cpp
 HEADERS += hybrisadaptor.h
 LIBS += -L/usr/lib -L../datatypes
 
-!contains(CONFIG,binder) {
-    LIBS += -lhybris-common -lhardware
-}
-
 include(../common-install.pri)
 target.path = $$SHAREDLIBPATH
 INSTALLS += target
