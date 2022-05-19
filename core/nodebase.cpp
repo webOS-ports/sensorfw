@@ -231,7 +231,7 @@ bool NodeBase::hasLocalRange() const
 DataRangeList NodeBase::parseDataRangeList(const QString& input, int defaultResolution) const
 {
     DataRangeList list;
-    foreach(const QString& fragment, input.split(",", QString::SkipEmptyParts))
+    foreach(const QString& fragment, input.split(",", Qt::SkipEmptyParts))
     {
         QStringList pair(fragment.split("=>"));
         QStringList pair2(fragment.split(":"));

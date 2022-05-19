@@ -42,7 +42,7 @@ void HumidityPlugin::Init(class Loader& l)
 }
 
 QStringList HumidityPlugin::Dependencies() {
-    return QString("humidityadaptor").split(":", QString::SkipEmptyParts);
+    return QString("humidityadaptor").split(":", Qt::SkipEmptyParts);
 }
 
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)

@@ -42,7 +42,7 @@ void LidPlugin::Init(class Loader& l)
 }
 
 QStringList LidPlugin::Dependencies() {
-    return QString("lidsensoradaptor").split(":", QString::SkipEmptyParts);
+    return QString("lidsensoradaptor").split(":", Qt::SkipEmptyParts);
 }
 
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)

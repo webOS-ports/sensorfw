@@ -43,7 +43,7 @@ void ALSPlugin::Init(class Loader& l)
 }
 
 QStringList ALSPlugin::Dependencies() {
-    return QString("alsadaptor").split(":", QString::SkipEmptyParts);
+    return QString("alsadaptor").split(":", Qt::SkipEmptyParts);
 }
 
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
