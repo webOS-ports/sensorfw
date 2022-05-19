@@ -149,7 +149,7 @@ void IioAdaptor::setup()
 
         iioDevice.channelTypeName = "proximity";
         devNodeNumber = findSensor(inputMatch);
-        proximityThreshold = SensorFrameworkConfig::configuration()->value<QString>(name + "/threshold", QString(PROXIMITY_DEFAULT_THRESHOLD)).toInt();
+        proximityThreshold = SensorFrameworkConfig::configuration()->value<QString>(name + "/threshold", QString::number(PROXIMITY_DEFAULT_THRESHOLD)).toInt();
         if (devNodeNumber!= -1) {
             QString desc = "Industrial I/O proximity sensor (" + iioDevice.name +")";
             qDebug() << desc;
