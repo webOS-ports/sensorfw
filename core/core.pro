@@ -89,7 +89,7 @@ lunaservice {
     SOURCES += lsclient.cpp
     HEADERS += lsclient.h
     DEFINES += SENSORFW_LUNA_SERVICE_CLIENT
-    PKGCONFIG += Qt5Gui json-c
+    PKGCONFIG += QtGui json-c
     PKGCONFIG += luna-service2 LunaSysMgrCommon LunaSysMgrIpcMessages
 }
 
