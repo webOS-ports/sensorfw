@@ -33,6 +33,11 @@ equals(QT_MAJOR_VERSION, 5):{
     TARGET = $$TARGET-qt5
 }
 
+equals(QT_MAJOR_VERSION, 6):{
+    TARGET = $$TARGET-qt5
+}
+
+
 OTHER_FILES += \
     ../../common.pri
 

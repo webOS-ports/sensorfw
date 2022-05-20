@@ -18,6 +18,11 @@ equals(QT_MAJOR_VERSION, 5): {
     PLUGINPATH = /usr/lib/sensord-qt5
 }
 
+equals(QT_MAJOR_VERSION, 6): {
+    publicheaders.path = /usr/include/sensord-qt5
+    PLUGINPATH = /usr/lib/sensord-qt5
+}
+
 # Path for shared libraries
 SHAREDLIBPATH = /usr/lib
 

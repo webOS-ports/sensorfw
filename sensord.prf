@@ -11,3 +11,8 @@ equals(QT_MAJOR_VERSION, 5):{
     INCLUDEPATH += /usr/include/sensord-qt5 /usr/include/sensord-qt5/datatypes /usr/include/sensord-qt5/filters
 }
 
+equals(QT_MAJOR_VERSION, 6):{
+    LIBS += -L/usr/lib/ -lsensorclient-qt5 -lsensordatatypes-qt5
+    DEPENDPATH += /usr/include/sensord-qt5
+    INCLUDEPATH += /usr/include/sensord-qt5 /usr/include/sensord-qt5/datatypes /usr/include/sensord-qt5/filters
+}

@@ -29,6 +29,9 @@ equals(QT_MAJOR_VERSION, 4):{
 equals(QT_MAJOR_VERSION, 5):{
     TARGET_H.path += /usr/include/sensord-qt5
 }
+equals(QT_MAJOR_VERSION, 6):{
+    TARGET_H.path += /usr/include/sensord-qt5
+}
 
 SOURCES += main.cpp \
            parser.cpp \
