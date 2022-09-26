@@ -32,6 +32,7 @@
 
 // Include datatypes for input and output.
 #include "timedunsigned.h"
+#include <QObject>
 
 // This is a simplest possible filter, with one input and one output.
 // In case you wish to create more complex filters, with several inputs

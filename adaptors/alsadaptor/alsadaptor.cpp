@@ -200,7 +200,7 @@ void ALSAdaptor::processSample(int pathId, int fd)
             sensordLogW() << "read(): " << strerror(errno);
             return;
         }
-        QVariant value(buffer);
+        QVariant value {QString(buffer)};
         bool ok;
         double fValue(value.toDouble(&ok));
         if(!ok) {
